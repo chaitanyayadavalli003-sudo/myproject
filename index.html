@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrumbCraft | Festival Cake Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="#" class="logo">Crumb<span>Craft.</span></a>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#cakes">Our Cakes</a>
+        <a href="#customize">Customize</a>
+        <a href="#planner">Festival Planner</a>
+    </nav>
+
+    <a href="#customize" class="nav-btn">Create Your Cake ↗</a>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <span class="eyebrow">THE FESTIVE BAKING STUDIO</span>
+        <h1>Made with love.<br><em>Celebrated with cake.</em></h1>
+        <p>
+            Every celebration deserves something extraordinary.
+            Create your dream cake, book ahead and let us
+            make your moments sweeter.
+        </p>
+
+        <div class="hero-actions">
+            <a href="#customize" class="primary-btn">Design Your Cake ↗</a>
+            <a href="#cakes" class="secondary-btn">Explore Cakes</a>
+        </div>
+
+        <div class="hero-stats">
+            <div><strong>100%</strong><small>Freshly Baked</small></div>
+            <div><strong>Custom</strong><small>Made for You</small></div>
+            <div><strong>Festive</strong><small>Special Collection</small></div>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=85" alt="Beautiful celebration cake">
+        <div class="floating-card">
+            <span>✦</span>
+            <div><strong>Sweet moments</strong><small>Start with a cake</small></div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="cakes">
+    <div class="section-heading">
+        <span class="eyebrow">BAKED TO PERFECTION</span>
+        <h2>Our signature collection</h2>
+        <p>A little sweetness for every celebration.</p>
+    </div>
+
+    <div class="cake-grid">
+        <article class="cake-card">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80" alt="Chocolate cake">
+            <div class="cake-info">
+                <div><h3>Chocolate Truffle</h3><p>Rich & indulgent</p></div>
+                <span>₹650/kg</span>
+            </div>
+        </article>
+
+        <article class="cake-card">
+            <img src="https://images.unsplash.com/photo-1586788680434-30d324b2d7b4?auto=format&fit=crop&w=700&q=80" alt="Red velvet cake">
+            <div class="cake-info">
+                <div><h3>Red Velvet</h3><p>Soft & elegant</p></div>
+                <span>₹750/kg</span>
+            </div>
+        </article>
+
+        <article class="cake-card">
+            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=700&q=80" alt="Cream cake">
+            <div class="cake-info">
+                <div><h3>Mango Delight</h3><p>Fresh & fruity</p></div>
+                <span>₹700/kg</span>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="customizer section" id="customize">
+    <div class="section-heading">
+        <span class="eyebrow">YOUR CAKE. YOUR RULES.</span>
+        <h2>Build your dream cake</h2>
+        <p>Personalize every detail and see your estimated price.</p>
+    </div>
+
+    <div class="builder">
+        <div class="builder-form">
+
+            <label for="flavor">Choose your flavor</label>
+            <select id="flavor">
+                <option value="Chocolate Truffle">Chocolate Truffle</option>
+                <option value="Red Velvet">Red Velvet</option>
+                <option value="Mango">Mango</option>
+                <option value="Black Forest">Black Forest</option>
+            </select>
+
+            <label for="weight">Cake weight</label>
+            <select id="weight">
+                <option value="0.5">0.5 kg</option>
+                <option value="1" selected>1 kg</option>
+                <option value="1.5">1.5 kg</option>
+                <option value="2">2 kg</option>
+                <option value="2.5">2.5 kg</option>
+                <option value="3">3 kg</option>
+                <option value="4">4 kg</option>
+                <option value="5">5 kg</option>
+            </select>
+
+            <label for="shape">Cake shape</label>
+            <select id="shape">
+                <option>Round</option>
+                <option>Square</option>
+                <option>Heart</option>
+            </select>
+
+            <label for="frosting">Frosting style</label>
+            <select id="frosting">
+                <option>Classic Cream</option>
+                <option>Buttercream</option>
+                <option>Chocolate Ganache</option>
+                <option>Fondant</option>
+                <option>Whipped Cream</option>
+            </select>
+
+            <label for="decoration">Decoration</label>
+            <select id="decoration">
+                <option value="0">Minimal - Free</option>
+                <option value="150">Floral - ₹150</option>
+                <option value="250">Premium - ₹250</option>
+                <option value="400">Fondant Art - ₹400</option>
+            </select>
+
+            <label for="message">Custom cake message</label>
+            <input type="text" id="message" maxlength="40" placeholder="Happy Birthday!">
+
+            <label for="orderDate">Select pickup date</label>
+            <input type="date" id="orderDate">
+
+            <label for="pickup">Pickup time</label>
+            <select id="pickup">
+                <option>10:00 AM</option>
+                <option>12:00 PM</option>
+                <option>2:00 PM</option>
+                <option>4:00 PM</option>
+                <option>6:00 PM</option>
+            </select>
+
+            <label for="customer">Your name</label>
+            <input type="text" id="customer" placeholder="Enter your name">
+
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" maxlength="10" placeholder="10-digit phone number">
+
+            <label for="photoCake">Photo cake image (optional)</label>
+            <input type="file" id="photoCake" accept="image/*">
+            <img id="photoPreview" class="photo-preview" alt="Photo cake preview">
+
+        </div>
+
+        <div class="price-panel">
+            <div class="preview-label">YOUR CREATION</div>
+
+            <div class="cake-preview">
+                <div class="cake-illustration" id="cakeIllustration">
+                    <div class="cake-top">✦</div>
+                    <div class="cake-layer"></div>
+                    <div class="cake-base"></div>
+                </div>
+                <p id="previewMessage">Your sweet creation</p>
+            </div>
+
+            <div class="price-details">
+                <div><span>Flavor</span><strong id="previewFlavor">Chocolate Truffle</strong></div>
+                <div><span>Weight</span><strong id="previewWeight">1 kg</strong></div>
+                <div><span>Decoration</span><strong id="previewDecoration">Minimal</strong></div>
+            </div>
+
+            <div class="price-total">
+                <span>Estimated total</span>
+                <h2 id="totalPrice">₹650</h2>
+            </div>
+
+            <button id="orderBtn" class="primary-btn full-btn">Place Pre-Order ↗</button>
+            <p class="small-note">Your order is subject to available daily capacity.</p>
+        </div>
+    </div>
+</section>
+
+<section class="planner section" id="planner">
+    <div class="section-heading">
+        <span class="eyebrow">BEHIND THE OVEN</span>
+        <h2>Festival demand planner</h2>
+        <p>A smart overview of orders and baking requirements.</p>
+    </div>
+
+    <div class="dashboard-grid">
+        <div class="dash-card">
+            <span>Total booked cakes</span>
+            <h2 id="totalOrders">0</h2>
+            <small>Orders stored in this browser</small>
+        </div>
+
+        <div class="dash-card">
+            <span>Daily capacity</span>
+            <h2>25 Cakes</h2>
+            <small>Maximum orders per day</small>
+        </div>
+
+        <div class="dash-card">
+            <span>Available capacity today</span>
+            <h2 id="availableSlots">25</h2>
+            <small>Remaining slots for today</small>
+        </div>
+    </div>
+
+    <div class="dashboard-box">
+        <h3>Daily production capacity</h3>
+        <div class="progress-track">
+            <div id="capacityBar" class="progress-fill"></div>
+        </div>
+        <p id="capacityText">0 / 25 cakes booked</p>
+    </div>
+
+    <div class="dashboard-box">
+        <h3>Ingredient demand forecast</h3>
+        <p class="forecast-subtitle">Estimated raw ingredients required for stored orders</p>
+        <div id="forecastList" class="forecast-list"></div>
+    </div>
+
+    <div class="dashboard-box">
+        <h3>Recent orders</h3>
+        <div id="ordersList"></div>
+    </div>
+</section>
+
+<footer>
+    <a href="#" class="logo">Crumb<span>Craft.</span></a>
+    <p>Crafting sweeter moments, one cake at a time.</p>
+    <small>© 2026 CrumbCraft Festival Cake Studio</small>
+</footer>
+
+<div id="receiptModal" class="modal">
+    <div class="receipt">
+        <button id="closeReceipt" class="close-btn">×</button>
+        <div class="receipt-icon">✦</div>
+        <h2>Order confirmed!</h2>
+        <p>Your celebration just got sweeter.</p>
+        <div id="receiptContent"></div>
+        <button id="printReceipt" class="primary-btn full-btn">Print Receipt</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
